@@ -29,7 +29,7 @@
             </button>
             <!-- Hamburger Toggle BTN -->
             <a class="block flex-shrink-0 lg:hidden" href="index.html">
-                <img src="src/images/logo/logo-icon.svg" alt="Logo" />
+                <img src="{{asset('assets/images/logo/logo-icon.svg')}}" alt="Logo" />
             </a>
         </div>
         <div class="hidden sm:block">
@@ -210,7 +210,7 @@
                                 <a class="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
                                     href="messages.html">
                                     <div class="h-12.5 w-12.5 rounded-full">
-                                        <img src="src/images/user/user-02.png" alt="User" />
+                                        <img src="{{asset('assets/images/user/user-01.png')}}" alt="User" />
                                     </div>
 
                                     <div>
@@ -226,7 +226,7 @@
                                 <a class="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
                                     href="messages.html">
                                     <div class="h-12.5 w-12.5 rounded-full">
-                                        <img src="src/images/user/user-01.png" alt="User" />
+                                        <img src="{{asset('assets/images/user/user-02.png')}}" alt="User" />
                                     </div>
 
                                     <div>
@@ -242,7 +242,7 @@
                                 <a class="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
                                     href="messages.html">
                                     <div class="h-12.5 w-12.5 rounded-full">
-                                        <img src="src/images/user/user-03.png" alt="User" />
+                                        <img src="{{asset('assets/images/user/user-03.png')}}" alt="User" />
                                     </div>
 
                                     <div>
@@ -258,7 +258,7 @@
                                 <a class="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
                                     href="messages.html">
                                     <div class="h-12.5 w-12.5 rounded-full">
-                                        <img src="src/images/user/user-04.png" alt="User" />
+                                        <img src="{{asset('assets/images/user/user-04.png')}}" alt="User" />
                                     </div>
 
                                     <div>
@@ -274,7 +274,7 @@
                                 <a class="flex gap-4.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
                                     href="messages.html">
                                     <div class="h-12.5 w-12.5 rounded-full">
-                                        <img src="src/images/user/user-02.png" alt="User" />
+                                        <img src="{{asset('assets/images/user/user-02.png')}}" alt="User" />
                                     </div>
 
                                     <div>
@@ -303,7 +303,7 @@
                     </span>
 
                     <span class="h-12 w-12 rounded-full">
-                        <img src="src/images/user/user-01.png" alt="User" />
+                        <img src="{{asset('assets/images/user/user-01.png')}}" alt="User" />
                     </span>
 
                     <svg :class="dropdownOpen && 'rotate-180'" class="hidden fill-current sm:block" width="12"
