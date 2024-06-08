@@ -8,6 +8,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="icon" href="favicon.ico">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
+    @stack('styles')
 </head>
 
 <body x-data="{ page: 'ecommerce', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }" x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
@@ -44,12 +46,8 @@ $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(valu
         <!-- ===== Content Area End ===== -->
     </div>
     <!-- ===== Page Wrapper End ===== -->
-    {{-- <script defer src="{{asset('/assets/js/chart-01.js')}}"></script>
-    <script defer src="{{asset('/assets/js/chart-02.js')}}"></script>
-    <script defer src="{{asset('/assets/js/chart-03.js')}}"></script>
-    <script defer src="{{asset('/assets/js/chart-01.js')}}"></script>
-    <script defer src="{{asset('/assets/js/map-01.js')}}"></script>
-    <script defer src="{{asset('/assets/js/us-aea-en.js')}}"></script> --}}
+    @livewireScripts
+    @stack('scripts')
 
 </body>
 
