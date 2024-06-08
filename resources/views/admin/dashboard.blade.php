@@ -1,8 +1,3 @@
 <x-base-layout>
-ADMIN
-
-@can('admin')
-    ssss
-@endcan
-
+    <x-breadcrumb title="Chart" path="dashboard"/>
 </x-base-layout>
